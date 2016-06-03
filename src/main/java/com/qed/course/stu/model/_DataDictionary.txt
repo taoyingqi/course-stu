@@ -1,0 +1,15 @@
+Table: stu
+---------+--------------+------+-----+---------+---------
+ Field   | Type         | Null | Key | Default | Remarks 
+---------+--------------+------+-----+---------+---------
+ no      | VARCHAR(36)  | NO   | PRI |         |         
+ name    | VARCHAR(36)  | YES  |     |         |         
+ un      | VARCHAR(32)  | NO   |     |         |         
+ pwd     | VARCHAR(32)  | NO   |     |         |         
+ gender  | BIT(1)       | YES  |     |         |         
+ phone   | VARCHAR(16)  | YES  |     |         |         
+ city    | VARCHAR(50)  | YES  |     |         |         
+ address | VARCHAR(100) | YES  |     |         |         
+ hobby   | VARCHAR(50)  | YES  |     |         |         
+---------+--------------+------+-----+---------+---------
+

@@ -1,0 +1,5 @@
+<ul class="pagination">
+    <li ng-class="pageNumber == 1 ? 'disabled' : ''"><a href="" ng-click="getPage(pageNumber - 1)">&laquo;上一页</a></li>
+    <li class="disabled"><a href="">{{pageNumber}}</a></li>
+    <li disabled="disabled" ng-class="pageNumber == totalPage ? 'disabled' : ''"><a href="" ng-click="getPage(pageNumber + 1)">下一页&raquo;</a></li>
+</ul>

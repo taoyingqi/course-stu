@@ -1,0 +1,534 @@
+﻿/*-----------------[初始化]--------------*/
+body {
+    color: #5f5f5f;
+    font-size: 12px;
+    line-height: 1.5;
+    position: relative;
+    font-family: "微软雅黑", "Microsoft Yahei";
+    background-color: #f9f7f7;
+    min-width: 320px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    color: #5f5f5f;
+}
+
+a:hover {
+    color: #3a9fff;
+}
+
+img {
+    max-width: 100%;
+    transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+}
+
+input, textarea, select {
+    font-size: 12px;
+    color: #5f5f5f;
+    border: 0;
+    font-family: "微软雅黑", "Microsoft Yahei";
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 0;
+    -o-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+/* button, input, select, textarea {
+    取消苹果手机方法效果
+    font-size:16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+} */
+
+input[type='submit'], input[type='reset'], input[type='button'], select, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type='submit'], input[type='reset'], input[type='button'], button {
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: #cecece;
+}
+
+::-moz-placeholder {
+    color: #cecece;
+}
+
+::-ms-input-placeholder {
+    color: #cecece;
+}
+
+.ani {
+    transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+}
+
+/*布局*/
+.wp {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.h50 {
+    height: 50px;
+    clear: both;
+    overflow: hidden;
+}
+
+.h55 {
+    height: 55px;
+    clear: both;
+    overflow: hidden;
+}
+
+.h100 {
+    height: 100px;
+    clear: both;
+    overflow: hidden;
+}
+
+.g-pa15 {
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.g-pa10 {
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.bg-f {
+    background: #fff;
+}
+
+.por {
+    position: relative;
+    overflow: visible;
+}
+
+/*******************************
+  -------[=头部]-------
+********************************/
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 38px;
+    width: 100%;
+}
+
+header h2 {
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    color: #fff;
+    background: #21292b;
+}
+
+header .con {
+    position: relative;
+    height: 38px;
+    background: #424f63;
+}
+
+header .right {
+    float: right;
+}
+
+.g-menu {
+    float: left;
+    padding: 0 9px;
+    height: 38px;
+    line-height: 38px;
+    border-right: 1px solid #b2b7c1;
+    color: #fff;
+}
+
+.g-menu em {
+    display: inline-block;
+    padding-left: 25px;
+    height: 100%;
+    background: url(../images/l-a1.png) no-repeat left center;
+    -webkit-background-size: 19px auto;
+    -o-background-size: 19px auto;
+    -moz-background-size: 19px auto;
+    background-size: 19px auto;
+}
+
+.hd-news, .hd-personal {
+    position: relative;
+    float: left;
+}
+
+.hd-news .btn {
+    display: block;
+    padding-left: 22px;
+    height: 38px;
+    overflow: hidden;
+    background: url(../images/l-a2.png) no-repeat left center;
+    -webkit-background-size: 17px auto;
+    -o-background-size: 17px auto;
+    -moz-background-size: 17px auto;
+    background-size: 17px auto;
+}
+
+.hd-news .btn em {
+    float: right;
+    margin-top: 12px;
+    padding: 0 4px;
+    height: 13px;
+    line-height: 13px;
+    background: #f77502;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.hd-personal {
+    margin-right: 21px;
+}
+
+.hd-personal .btn {
+    margin-left: 16px;
+}
+
+.hd-personal .btn {
+    display: block;
+    overflow: hidden;
+    line-height: 38px;
+    vertical-align: middle;
+}
+
+.hd-personal .btn img {
+    float: left;
+    margin-top: 6px;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+}
+
+.hd-personal .btn em {
+    float: right;
+    padding: 0 14px 0 7px;
+    color: #fff;
+    background: url(../images/l-icn1.png) no-repeat right center;
+    -webkit-background-size: 7px auto;
+    -o-background-size: 7px auto;
+    -moz-background-size: 7px auto;
+    background-size: 7px auto;
+}
+
+.hd-personal .box {
+    position: absolute;
+    right: -22px;
+    top: 38px;
+    display: none;
+    width: 115px;
+    background: #fff;
+    border: 1px solid #acabab;
+    border-top: 0;
+}
+
+.hd-personal li {
+    border-top: 1px solid #dedede;
+    height: 38px;
+    line-height: 38px;
+}
+
+.hd-personal li a {
+    display: block;
+    padding-left: 42px;
+    font-size: 13px;
+    color: #363636;
+    background: url(../images/l-icn7.png) no-repeat 16px center;
+    background-size: auto 15px;
+    -webkit-background-size: auto 15px;
+    -o-background-size: auto 15px;
+    -moz-background-size: auto 15px;
+    background-size: auto 15px;
+}
+
+.hd-personal .li2 a {
+    background-image: url(../images/l-icn8.png);
+}
+
+.hd-personal .li3 a {
+    background-image: url(../images/l-icn9.png);
+}
+
+/*
+.hd-news .box{position: absolute;right:-70px;top:38px;width: 250px;
+    background:#fff;}
+.hd-news .box:after{content:'';
+    position: absolute;right:93px;top:-5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;}
+.hd-news .box h3{padding:5px 10px;
+    background:#fff333;font-size: 15px;color:#000;font-weight: normal;}
+
+*/
+
+section {
+    padding-top: 38px;
+}
+
+/* 底部 */
+footer {
+    padding: 25px 0;
+    background: #424f63;
+    color: #fff;
+}
+
+footer img {
+    display: block;
+    margin: 0 auto;
+    width: 48%;
+}
+
+/* 左侧公用 */
+@media (min-width: 300px) {
+    .box-left {
+        width: 58%;
+    }
+}
+
+@media (min-width: 650px) {
+    .box-left {
+        width: 50%;
+    }
+}
+
+@media (min-width: 800px) {
+    .box-left {
+        width: 42%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .box-left {
+        width: 36%;
+    }
+}
+
+.box-left {
+    position: fixed;
+    left: 0;
+    top: 42px;
+    bottom: 0;
+    z-index: 99;
+    margin-left: -58%;
+    padding: 73px 0 10px;
+    background: #424f63;
+    overflow: auto;
+    -o-transition: .7s;
+    -ms-transition: .7s;
+    -moz-transition: .7s;
+    -webkit-transition: .7s;
+    transition: .7s;
+}
+
+.box-left.ok {
+    margin-left: 0;
+}
+
+.box-left .img {
+    display: block;
+    margin: 15px auto 6px;
+    width: 91px;
+    height: 29px;
+}
+
+.box-left .m1 {
+    position: relative;
+    text-align: center;
+}
+
+.box-left .m1:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #979fab;
+    -webkit-box-shadow: 0px 0px 3px #979fab;
+    -o-box-shadow: 0px 0px 3px #979fab;
+    -moz-box-shadow: 0px 0px 3px #979fab;
+    box-shadow: 0px 0px 3px #979fab;
+}
+
+.box-left .m1 em {
+    position: relative;
+    z-index: 99;
+    display: inline-block;
+    padding: 0 18px;
+    background: #424f63;
+}
+
+.box-left .m1 em i {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: url(../images/l-icn3.png) no-repeat center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.box-left .box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.box-left ul {
+    margin: 0 10px;
+    overflow: auto;
+    padding: 10px 0;
+    background: #5e697a;
+    border-radius: 6px;
+    height: 100%;
+}
+
+.box-left li {
+    margin-bottom: 10px;
+}
+
+.box-left li a {
+    display: block;
+    color: #fff;
+}
+
+.box-left li .a1 {
+    padding: 0 0 6px 48px;
+    line-height: 23px;
+    height: 27px;
+    overflow: hidden;
+    background: url(../images/l-xian.png) no-repeat center bottom;
+    -webkit-background-size: 90% 3px;
+    -o-background-size: 90% 3px;
+    -moz-background-size: 90% 3px;
+    background-size: 90% 3px;
+}
+
+.box-left li .a1:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.box-left li .a1 em {
+    position: relative;
+}
+
+.box-left li .a1 em:after {
+    content: '';
+    position: absolute;
+    left: -17px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    background: url(../images/l-btn2.png) no-repeat center;
+    -webkit-background-size: 8px auto;
+    -o-background-size: 8px auto;
+    -moz-background-size: 8px auto;
+    background-size: 8px auto;
+}
+
+.box-left li.on .a1 em:after {
+    background-image: url(../images/l-btn1.png);
+}
+
+.box-left dl {
+    padding: 3px 0;
+    display: none;
+}
+
+.box-left dd a {
+    padding-left: 50px;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+
+.box-left dd a:active {
+    background: url(../images/a-bg.png) no-repeat center;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    color: #428bca;
+}
+
+.box-left dd a em {
+    position: relative;
+    padding-left: 12px;
+}
+
+.box-left dd a em:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 6px;
+    height: 7px;
+    background: url(../images/l-btn3.png) no-repeat left top;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.box-left dd a em:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background: url(../images/l-xian2.png) no-repeat center;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.box-left dd a:active em:after {
+    display: none;
+}

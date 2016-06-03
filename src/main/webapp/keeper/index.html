@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html ng-app="keeperApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>上海应用技术大学信息管理系统</title>
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+    <link rel="stylesheet" href="/assets/temp/css/cui.css"/>
+    <link rel="stylesheet" href="/assets/temp/css/lib-m.css"/>
+    <link rel="stylesheet" href="/assets/temp/css/style-m.css"/>
+    <script src="/assets/angular/angular.min.js"></script>
+    <script src="/assets/angular/angular-ui-router.min.js"></script>
+    <link rel="stylesheet" href="/assets/easydialog/easydialog.css"/>
+    <link rel="stylesheet" href="/assets/css/stu.css"/>
+    <link rel="stylesheet" href="/assets/city/city-picker.css"/>
+</head>
+<body class="sticky-header">
+<!-- 左侧菜单 -->
+<aside class="box-left">
+    <div class="box">
+        <a href="#/"><img src="/assets/imgs/sit-logo.jpg" alt="logo" class="img"></a>
+        <div class="m1">
+            <em><i></i></em>
+        </div>
+    </div>
+    <ul>
+        <li>
+            <a href="javascript:;" class="a1"><em>学生管理</em></a>
+            <dl>
+                <dd><a href="javascript:;" ui-sref="stu/info"><em>查看学生信息</em></a></dd>
+                <dd><a href="javascript:;" ui-sref="stu/add"><em>添加学生信息</em></a></dd>
+                <dd><a href="#/stu/ffff"><em>ffff</em></a></dd>
+            </dl>
+        </li>
+    </ul>
+</aside>
+<!-- 左侧菜单 -->
+<!-- 头部 -->
+<header>
+    <div class="con">
+        <div class="right">
+            <!-- 消息 -->
+            <div class="hd-news">
+                <!--<a href="" class="btn"><em>5</em></a>-->
+            </div>
+            <!-- 消息 -->
+            <!-- 个人 -->
+            <div class="hd-personal">
+                <!--<a href="javascript:;" class="btn">
+                    <img src="" alt="cover">
+                    <em>本智</em>
+                </a>
+
+                <div class="box">
+                    <ul>
+                        <li class="li1"><a href="">个人中心</a></li>
+                        <li class="li2"><a href="">分享本智</a></li>
+                        <li class="li3"><a href="">退出</a></li>
+                    </ul>
+                </div>-->
+            </div>
+            <!-- 个人 -->
+            <div class="c"></div>
+        </div>
+        <a class="g-menu" href="javascript:;">
+            <em>目录</em>
+        </a>
+
+        <div class="c"></div>
+    </div>
+</header>
+<!-- 头部 -->
+<!-- 主体内容 -->
+<section>
+    <!-- header section start-->
+    <div class="header-section">
+        <!--navigation bar start -->
+
+        <!--navigation bar end -->
+    </div>
+    <!-- header section end-->
+    <!-- main content start-->
+    <div class="main-content">
+        <!--body wrapper start-->
+        <div class="wrapper">
+            <div style="width: 100%;">
+                <div data-ui-view="">
+                </div>
+            </div>
+        </div>
+        <!--body wrapper end-->
+    </div>
+    <!-- main content end-->
+</section>
+<!-- 主体内容 -->
+<script src="/assets/js/jquery-2.1.4.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/easydialog/easydialog.min.js"></script>
+<script src="/assets/temp/js/lib.js"></script>
+<script src="/assets/city/cityData.js"></script>
+<script src="/assets/city/CityPicker.js"></script>
+<script src="/assets/js/stu-controller.js"></script>
+<script src="/assets/js/router-config.js"></script>
+
+
+</body>
+</html>

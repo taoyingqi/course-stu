@@ -1,0 +1,46 @@
+<div class="row" ng-controller="stuAddCtrl">
+    <h2>添加学生信息</h2>
+    <form class="stu-form" ng-submit="stuSubmit()">
+        <div class="input-group">
+            <span class="input-group-addon">姓名：</span>
+            <input type="text" ng-model="stu.name" class="form-control" placeholder="例如：马云" required="required"/>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">用户名：</span>
+            <input type="text" ng-model="stu.un" class="form-control" ng-blur="unIsExisted(stu.un)" placeholder="例如：张三" required="required"/>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">密码：</span>
+            <input type="password" ng-model="stu.pwd" class="form-control" minlength="6"/>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">性别：</span>
+            <select ng-model="stu.gender" class="form-control" required="required">
+                <option value="1">男</option>
+                <option value="0">女</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">手机号：</span>
+            <input type="text" ng-model="stu.phone" class="form-control" placeholder="15800000000"
+                   pattern="(\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$" required="required">
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">城市：</span>
+            <input id="city-picker" type="text" ng-model="stu.city" class="form-control" placeholder="请选择" required="required">
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">详细地址：</span>
+            <input type="text" ng-model="stu.address" class="form-control" required="required">
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">爱好：</span>
+            <input type="text" ng-model="stu.hobby" class="form-control" placeholder="体育 音乐">
+        </div>
+        <br>
+        <div class="form-group">
+            <input type="submit" class="btn btn-info btn-block" value="添加"/>
+        </div>
+    </form>
+    <a ui-sref="stu/info" class="btn btn-default btn-link">查看</a>
+</div>
