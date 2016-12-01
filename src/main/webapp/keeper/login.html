@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/assets/easydialog/easydialog.css"/>
+    <link rel="stylesheet" href="/assets/css/sign.css"/>
+</head>
+<body>
+<!-- /navbar -->
+<div id="login-container">
+    <div id="login-header">
+        <h3>Login</h3>
+    </div>
+    <div id="login-content" class="clearfix">
+        <form id="signIn_form" action="">
+            <fieldset>
+                <div class="control-group">
+                    <label class="control-label" for="username">用户名：</label>
+
+                    <div class="controls">
+                        <input type="text" class="" id="username" name="un" value="admin"/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="password">密码：</label>
+
+                    <div class="controls">
+                        <input type="password" class="" id="password" name="pwd" value="123456"/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="captcha">验证码：</label>
+
+                    <div class="controls">
+                        <input type="text" class="" id="captcha" name="captcha" data-bv-field="captcha" style="width: 50%;" placeholder="请输入验证码"/>
+                        <a href="#" class="change-captcha" title="换一个"><img id="imgObj" alt="验证码"
+                                                                            src="/captcha/getCode"/></a>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="pull-right">
+                <button type="submit" class="btn btn-warning btn-large">Login</button>
+            </div>
+        </form>
+    </div>
+    <!-- /login-extra -->
+    <div class="alert">
+        <!--<button type="button" class="close" data-dismiss="alert">×</button>-->
+        <h4>提示!</h4>
+        <span class="alert-info"><strong>警告!</strong>请注意你的个人隐私安全。</span>
+    </div>
+</div>
+<script src="/assets/js/jquery-2.1.4.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/easydialog/easydialog.min.js"></script>
+<script src="/assets/js/qedUtils.js"></script>
+<script src="/assets/js/login.js"></script>
+</body>
+</html>

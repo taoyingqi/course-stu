@@ -33,6 +33,7 @@ public class StuConfig extends JFinalConfig {
     public void configRoute(Routes routes) {
         routes.add("/", IndexController.class);
         routes.add("/stu", StuController.class);
+        routes.add("/captcha", CaptchaController.class);
     }
 
     public static DruidPlugin createDruidPlugin() {
@@ -72,7 +73,6 @@ public class StuConfig extends JFinalConfig {
 
     @Override
     public void configHandler(Handlers handlers) {
-
     }
 
     @Override
