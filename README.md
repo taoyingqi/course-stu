@@ -1,0 +1,28 @@
+<table>
+   <tr>
+      <td>功能描述</td>
+      <td>发送登录验证码</td>
+   </tr>
+   <tr>
+      <td>接口</td>
+      <td>/api/sms/captcha/signIn</td>
+   </tr>
+   <tr>
+      <td>param</td>
+      <td>phone</td>
+      <td>required</td>
+      <td>^[1][3,4,5,7,8][0-9]{9}$</td>
+   </tr>
+   <tr>
+      <td>return</td>
+      <td>1000</td>
+      <td>成功</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td>1001</td>
+      <td>参数错误</td>
+      <td></td>
+   </tr>
+</table>
