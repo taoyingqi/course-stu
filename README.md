@@ -1,17 +1,45 @@
 <table>
    <tr>
       <td>功能描述</td>
-      <td>发送登录验证码</td>
+      <td>注册</td>
    </tr>
    <tr>
       <td>接口</td>
-      <td>/api/sms/captcha/signIn</td>
+      <td>/api/users/signUp</td>
    </tr>
    <tr>
-      <td>param</td>
+      <td>方法</td>
+      <td>POST</td>
+   </tr>
+   <tr>
+      <td>body</td>
       <td>phone</td>
       <td>required</td>
       <td>^[1][3,4,5,7,8][0-9]{9}$</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td>pwd</td>
+      <td>required</td>
+      <td>^\w{4,18}$</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td>un</td>
+      <td>required</td>
+      <td>^\w{4,18}$</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td>captcha</td>
+      <td>required</td>
+      <td>^\d{6}$</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
    </tr>
    <tr>
       <td>return</td>
@@ -23,6 +51,24 @@
       <td></td>
       <td>1001</td>
       <td>参数错误</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td>1002</td>
+      <td>验证码或手机号错误</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td>1003</td>
+      <td>该手机号已注册</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td>1004</td>
+      <td>服务器异常</td>
       <td></td>
    </tr>
 </table>
